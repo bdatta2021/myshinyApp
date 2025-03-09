@@ -23,3 +23,45 @@ Scatter plot: Provides a point-based visualization of the relationship between v
 Conclusion: 
 The statistical tests and graphical representation suggest that vaccination status does not significantly impact mask-wearing behavior. This means that individuals decisions to wear masks are independent of their vaccination status. However, further investigation with a larger dataset or additional factors could provide more insights into behavioral patterns.
 
+
+Instructions:
+
+install.packages(c("shiny","DT","MASS","ggplot2","rsconnect","randomForest","dplyr"))
+
+Run these library into R-console
+
+library(shiny)
+library(DT)
+library(randomForest)
+library(MASS)
+library(ggplot2)
+library(rsconnect)
+library(dplyr)
+
+
+# Type the following code into R-console for setting the working directory
+
+setwd("C:/Dr. Chang/www/myshinyApp") and then press Control +Enter (Note: everybody should have individual path my path is here : "C:/Dr. Chang/www/myshinyApp")
+
+# Check the working directory into R-console. Type the following code into "R console"
+
+
+getwd() and then press control+Enter
+
+
+
+# Run into the local machine before deploy
+
+shiny::runApp()
+
+# Connect the RStudio with Deploy into R-console
+
+
+rsconnect: :deployApp()
+
+
+# From GitHub page, if we want to run my "R-shiny" then type the following "R code" into the "R-console"
+
+shiny::runGitHub("myshinyApp", "bdatta2021") and then press control+Enter.
+
+
